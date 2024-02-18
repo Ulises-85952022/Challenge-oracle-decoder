@@ -1,0 +1,104 @@
+#botonCopiar{
+    display: none;
+}
+/* Estilos básicos de la página */
+/* Global styles */
+body {
+  font-family: Inter, sans-serif; /* Use proper font name */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f4f4fc;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+header img {
+  max-width: 200px;
+  height: auto;
+}
+/* Input and output text areas */
+#textoEncriptado,
+#textoDesencriptado {
+  padding: 30px; /* Consistent padding */
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#textoEncriptado {
+  width: 60%;
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  height: 120px;
+  margin-top: auto;
+}
+
+#textoDesencriptado {
+  width: 60%;
+  position: absolute;
+  left: 100px;
+  top: 400px;
+  height: 120px;
+}
+
+/* Buttons */
+.boton-encriptado{
+
+  position: absolute;
+  background-color: rgb(7, 7, 104);
+  margin-left: 100px;
+  top: 300px;
+  height: 40px;
+  color: #ccc;
+  padding: 0 5% 0 ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right:800px; }
+
+.boton-desencriptado{
+  
+  position: absolute;
+  background-color: rgb(7, 7, 104);
+  margin-left: 100px;
+  top: 600px;
+  height: 40px;
+  color: #ccc;
+  padding: 0 5% 0 ;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right:800px;
+
+}
+button:hover {
+  opacity: 0.8;
+}
+
+#botonCopiar {
+  background-color: #ccc;
+  position: absolute;
+  margin-left: 100px;
+  top: 400px;
+}
+/* Alert (optional) */
+.alerta {
+  position:absolute;
+  top: 800px; /* Adjusted position */
+  left: 770px;
+  display: flex;
+  color: #495057;
+}
+.contenedor-mono{
+  position: relative;
+  top: 150px;
+  margin-left: 20%;
+  left: 700px;
+  }

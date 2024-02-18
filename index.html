@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.google.com/share?selection.family=Inter:wght@100;200;300;400;500;600;700;800;900">
+    <script type="text/javascript" src="script.js"></script>
+    <title>Cifrado</title>
+</head>
+<body>
+    <Header>
+        <img class="logo" src="/Imagenes/Logo-1.png" alt="Logo de aplicacion encriptar">
+        <p> Encriptador Ulises Hdz</p>
+    </Header>
+    <main>
+    <input type="text" id="textoEncriptado">
+    <textarea name="resultado" id="textoDesencriptado" cols="30"
+    rows="10"></textarea>
+    <button class="boton-encriptado" type="button" id="botonEncriptado">Encriptar</button>
+    <button class="boton-desencriptado" type="button" id="botonDesencriptado">Desencriptar</button>
+    <button type="button" id="botonCopiar">Copiar</button>
+    <div class="alerta">
+        <img src="/Imagenes/alerta.svg" alt="alerta";
+        <p> Solo letras minusculas y sin acentos</p>
+    </div>
+    <Div class="contenedor-mono">
+        <img src="/Imagenes/Muñeco.svg" alt="contenedor-mono">;
+    </Div>
+    </Div>
+    </main>
+    </body>
+    <script>
+        var btn = document.querySelector("#botonEncriptado");
+        btn.onclick = encriptar;
+        var btn2 = document.querySelector("#botonDesencriptado");
+        btn2.onclick = desencriptar;
+        var btn3 = document.querySelector("#botonCopiar");
+        btn3.onclick = copiar;
+    </script>
+
+</html>
