@@ -97,8 +97,50 @@ button:hover {
   color: #495057;
 }
 .contenedor-mono{
-  position: relative;
+  position: absolute;
   top: 150px;
   margin-left: 20%;
-  left: 700px;
+  left: 300px;
   }
+  @media screen and (min-width: 700px) {
+    .body {
+      flex-direction: row;
+      padding-left: 20vh;
+      gap: 6rem;
+    }
+  
+    .contenedor-mono {
+      width: auto;
+    }
+  
+    .boton-desencriptado{
+      width: auto;
+      height: 100dvh;
+    }
+  
+    .contenedor-desencriptado {
+      flex-grow: 2;
+    }
+  
+    #texto-encriptado {
+      height: 100dvh;
+      width: 25vw;
+    }
+  
+    .container-img {
+      display: block;
+    }
+  
+    .boton-encriptado {
+      flex-direction: row;
+    }
+  
+    .alerta {
+      position: absolute;
+      width: auto;
+      top: 2.5rem;
+      left: 2.5rem;
+      padding: 0;
+    }
+  }
+  
