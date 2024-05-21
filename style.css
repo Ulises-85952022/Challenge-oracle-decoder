@@ -1,25 +1,24 @@
 #botonCopiar {
   display: none;
 }
-
 /* Global styles */
 body {
   font-family: 'Inter', sans-serif;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+  margin:0;
+  padding:0;
+  width:100%;
   background-color: #f4f4fc;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   min-height: 100vh;
+  display:flex; 
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
 }
 
 /* Header */
-header {
+header { 
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 /* Logo */
@@ -28,35 +27,41 @@ header img {
   height: auto;
 }
 
-/* Input and output text areas */
+/* Text areas */
 #textoEncriptado,
 #textoDesencriptado {
-  padding: 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 80%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 90%;
   max-width: 700px;
-  height: 150px;
-  font-size: 16px;
+  height: 200px;
+  font-size: 1rem;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  resize: none;
 }
 
 /* Buttons */
 .boton-encriptado,
+.boton-desencriptado,
+#botonCopiar {
+  height: 3rem;
+  padding: 0 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.boton-encriptado,
 .boton-desencriptado {
   background-color: #007BFF;
-  height: 45px;
   color: #fff;
-  padding: 0 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-bottom: 20px;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  margin-bottom: 1rem;
 }
 
 .boton-encriptado:hover,
@@ -66,16 +71,9 @@ header img {
 
 #botonCopiar {
   background-color: #28a745;
-  height: 45px;
   color: #fff;
-  padding: 0 25px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  margin-top: 20px;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+  display: none;
 }
 
 #botonCopiar:hover {
@@ -87,20 +85,21 @@ header img {
   display: flex;
   align-items: center;
   color: #495057;
-  margin-top: 20px;
+  margin-top: 1rem;
   background-color: #fff3cd;
-  padding: 10px 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
 }
 
 .alerta img {
-  margin-right: 10px;
+  margin-right: 0.5rem;
 }
 
 /* Container for additional elements */
 .contenedor-mono {
-  margin-top: 30px;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .contenedor-mono img {
@@ -109,18 +108,21 @@ header img {
 }
 
 /* Media queries for responsiveness */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 768px) {
   body {
-    flex-direction: column;
-    padding: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 2rem;
   }
 
   #textoEncriptado,
   #textoDesencriptado {
-    width: 60%;
+    width: 45%;
   }
 
   .contenedor-mono {
-    margin-top: 50px;
+    margin-top: 0;
   }
+
 }
